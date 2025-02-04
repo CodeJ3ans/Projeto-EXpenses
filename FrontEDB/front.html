@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Despesas</title>
+</head>
+<body>
+    <header>
+        <h1>Despesas Pessoais</h1>
+    </header>
+    <main>
+        <section>
+            <div class="baseBloco">
+                <div class="input-box">
+                    <h2>Nome da Pessoa</h2>
+                    <input id="nome" type="text" placeholder="Digite o nome"></input>
+                </div>
+                <div class="input-box">
+                    <h2>Descrição:</h2>
+                    <textarea id="historico" type="text" placeholder="Descrição da despesa..."></textarea>
+                </div>
+                <div class="input-box">
+                    <h2>Valor:</h2>
+                    <input id="valor" type="number" placeholder="Valor em (R$)"></input>
+                </div>
+                <div class="input-tag">
+                    <h2>Tags</h2>
+                    <button class="addTag">+</button>
+                    <h2>:</h2>
+                </div>
+                <button class="botaoSalvar" id="salvarButton">Salvar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="info-container">
+                <div class="info-box">
+                    <table id="despesasTabela">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="somaValores">
+                <h3 class="valorTotal">Valor Total:</h3>
+                <input id="blocoValor" type="text" disabled>
+            </div>
+        </aside>
+    </main>
+</body>
+<script src="code.js"></script>
+</html>

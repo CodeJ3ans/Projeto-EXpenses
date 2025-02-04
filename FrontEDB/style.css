@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(212, 211, 211);
+    height: 100px;
+    width: auto;
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: auto;
+    width: 50%;
+}
+
+main aside {
+    display: flex;
+    background-color: #61ada0;
+    height: 450px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.baseBloco {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.7);
+    border-radius: 10%;
+    width: 500px;
+    height: 400px;
+    background-color: #61ada0;
+    gap: 10px;
+}
+
+.input-box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 195px;
+    gap: 10px;
+}
+
+.input-box input {
+    height: 35px;
+    width: 188px;
+}
+
+.input-box h2 {
+    font-size: 24px;
+    width: 300px;
+}
+
+.input-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.botaoSalvar {
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    align-self: last baseline;
+    margin-right: 25px;
+    width: 70px;
+    height: 35px;    
+}
+
+aside {
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-height: 500px;
+}
+
+.info-container {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.input-tag {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    width: 195px;
+    gap: 10px;
+}
+
+.addTag {
+    font-size: 18px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.info-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.info-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    z-index: 1;
+}
+
+td {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.somaValores {
+    color: white;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.valorTotal {
+    display: flex;
+    text-align: right;
+    float: none;
+    flex-direction: column;
+}
+
+#blocoValor {
+    display: flex;
+    background-color: white;
+    border-style: none;
+    border-radius: 5px;;
+    width: 80px;
+    height: 20px;
+}
